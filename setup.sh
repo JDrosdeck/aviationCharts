@@ -5,8 +5,8 @@ IFS=$(printf '\n\t')  # Always put this in Bourne shell scripts
 #Install various utilities
 sudo \
     apt-get install \
+        make \
         git \
-	make \
 	gdal-bin \
         libmodern-perl-perl \
         pngquant \
@@ -16,7 +16,7 @@ sudo \
         imagemagick \
         cpanminus \
         python-imaging \
-        perltidy
+        perltidy  
 
 cpanm Carton
 carton install
